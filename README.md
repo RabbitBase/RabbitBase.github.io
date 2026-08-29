@@ -1,6 +1,6 @@
 <div align="center">
   <img src="public/logo.png" alt="Rabbit Base Logo" width="120" />
-  <h1>Rabbit Base 🐰</h1>
+  <h1>Rabbit Base</h1>
   <p><strong>A tactical dashboard for open-source bounty hunters.</strong></p>
   <p><a href="https://RabbitBase.github.io/"><strong>👉 View the Live Website 👈</strong></a></p>
 </div>
@@ -9,14 +9,31 @@
 
 ## 🎯 About The Project
 
-**Rabbit Base** is an open-source contribution tracking and planning tool built for developers looking to dive into the open-source "warren". With a distinct brutalist design aesthetic, it acts as your personal command center to track repositories, hunt down "Good First Issues", and get AI-powered tactical roadmaps for contributing.
+**Rabbit Base** is an open-source contribution tracking and planning tool built for developers looking to dive into the open-source "warren". It acts as your personal command center to track repositories, hunt down "Good First Issues", and get AI-powered tactical roadmaps for contributing.
 
 ### ✨ Core Features
 *   **The Bounty Board**: Track target organizations and repositories locally or privately in your "Stealth Safehouse".
 *   **AI Tactical Roadmaps**: Integrates with the **Google Gemini API** to generate punchy, 3-step action plans for contributing to specific repositories based on your goals (e.g., Bug Hunting, Architecture Setup).
 *   **Supabase Authentication**: Secure user login and personalized dashboard data storage.
-*   **Brutalist UI**: A striking, high-contrast, brutalist design language for a unique user experience.
 *   **Markdown Rendering**: AI mission briefings are parsed and rendered in clean markdown.
+
+---
+
+## 🗺️ How to Make Full Use of Rabbit Base
+
+Rabbit Base is designed to streamline your open-source journey. Here is how you can use it to its full potential:
+
+1. **Scout for Targets (The Bounty Board)** 
+   Use the **Local Bounties** tab to track repositories you are interested in contributing to. Add the repository name and URL. This creates a centralized hit-list of projects you want to support.
+
+2. **Generate Tactical Roadmaps**
+   Once you've tracked a repository, select it from your list and choose a specific goal (like "First Good Issue" or "Bug Hunting"). Hit the **Generate AI Roadmap** button. Rabbit Base will use AI to decrypt the target and give you a punchy, 3-step mission briefing on exactly how to start contributing to that specific project.
+
+3. **Utilize the Stealth Safehouse**
+   Working on private repositories, unannounced features, or classified open-source zero-days? Use the **Safehouse** tab. Targets tracked here are strictly private to you, allowing you to generate AI roadmaps for sensitive projects without exposing them to the global dashboard.
+
+4. **Level Up Your Agent**
+   Use the roadmaps to actually make pull requests and contribute. As you conquer "Good First Issues", you'll gain the context needed to tackle larger architectural challenges in those same repositories!
 
 ---
 
@@ -70,16 +87,13 @@ To get a local copy up and running, follow these steps.
 
 ---
 
-## 🌐 Deployment
+## 🤝 Contributing & Community
 
-This project is configured to deploy automatically to **GitHub Pages** via GitHub Actions.
+We love contributions! If you're looking to help out or get involved, please read through our community guidelines:
 
-1.  Ensure your repository is named exactly `<username>.github.io` (or `<organization>.github.io`).
-2.  Go to your repository **Settings > Pages**.
-3.  Set the **Source** to **GitHub Actions**.
-4.  Push your changes to the `main` branch. The `.github/workflows/deploy.yml` workflow will automatically build and publish the site.
-
-*(Note: Don't forget to update your Supabase **Site URL** and **Redirect URLs** to match your live GitHub Pages domain!)*
+*   📖 **[Contributing Guidelines](CONTRIBUTING.md)**: Learn how to report bugs, suggest features, and submit pull requests.
+*   🛡️ **[Security Policy](SECURITY.md)**: Find instructions on how to safely report security vulnerabilities.
+*   🤝 **[Code of Conduct](CODE_OF_CONDUCT.md)**: Read our community standards and expectations.
 
 ---
 
