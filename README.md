@@ -2,6 +2,7 @@
   <img src="public/logo.png" alt="Rabbit Base Logo" width="120" />
   <h1>Rabbit Base 🐰</h1>
   <p><strong>A tactical dashboard for open-source bounty hunters.</strong></p>
+  <p><a href="https://RabbitBase.github.io/"><strong>👉 View the Live Website 👈</strong></a></p>
 </div>
 
 ---
