@@ -15,7 +15,7 @@ export async function generateRoadmap(repoName, repoUrl, goal) {
   }
 
   // The specific Gemini endpoint for generating text using the flash model
-  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+  const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`;
 
   // This is the prompt that gives the AI its "RPG Quest-Giver" persona
   const systemPrompt = `
