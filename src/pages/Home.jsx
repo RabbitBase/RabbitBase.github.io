@@ -4,6 +4,7 @@ import logo from '../assets/logo.png';
 import { Globe, MapPin, EyeOff } from 'lucide-react';
 import { generateRoadmap } from '../utils/generateRoadmap';
 import { supabase } from '../utils/supabase';
+import ReactMarkdown from 'react-markdown';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -240,7 +241,9 @@ export default function Home() {
                 {roadmapData && (
                   <div className="brutal-box" style={{ marginTop: '1.5rem', backgroundColor: '#111', color: '#0f0', padding: '1.5rem', whiteSpace: 'pre-wrap' }}>
                     <h4 style={{ margin: '0 0 1rem 0', textTransform: 'uppercase', color: '#fff' }}>Mission Briefing</h4>
-                    <p style={{ margin: 0, fontFamily: 'monospace', lineHeight: '1.5' }}>{roadmapData}</p>
+                    <div style={{ margin: 0, fontFamily: 'monospace', lineHeight: '1.5' }}>
+                      <ReactMarkdown>{roadmapData}</ReactMarkdown>
+                    </div>
                   </div>
                 )}
               </div>
@@ -365,7 +368,9 @@ export default function Home() {
                 {roadmapData && (
                   <div style={{ marginTop: '1.5rem', backgroundColor: '#000', color: '#0f0', padding: '1.5rem', whiteSpace: 'pre-wrap', border: '2px dashed #0f0' }}>
                     <h4 style={{ margin: '0 0 1rem 0', textTransform: 'uppercase', color: '#0f0' }}>Classified Briefing</h4>
-                    <p style={{ margin: 0, fontFamily: 'monospace', lineHeight: '1.5' }}>{roadmapData}</p>
+                    <div style={{ margin: 0, fontFamily: 'monospace', lineHeight: '1.5' }}>
+                      <ReactMarkdown>{roadmapData}</ReactMarkdown>
+                    </div>
                   </div>
                 )}
               </div>
