@@ -71,8 +71,8 @@ export default function Navigation() {
       {/* LEFT ZONE: Logo */}
       <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center', minWidth: 0 }}>
         <Link to="/" onClick={closeMenu} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <div style={{ width: '48px', height: '48px', border: 'var(--border-thick)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', backgroundColor: 'var(--bg-white)', flexShrink: 0 }}>
-            <img src={logo} alt="Base HQ" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.15)' }} onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
+          <div style={{ width: '48px', height: '48px', border: 'var(--border-thick)', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', backgroundColor: 'var(--bg-white)', flexShrink: 0 }}>
+            <img src={logo} alt="Base HQ" style={{ width: '100%', height: '100%', objectFit: 'cover' }} onError={(e) => { e.target.style.display = 'none'; e.target.nextSibling.style.display = 'block'; }} />
             <Rabbit size={28} color="var(--primary-orange)" style={{ display: 'none' }} />
           </div>
           <h1 className="desktop-nav" style={{ margin: 0, fontSize: '1.8rem', whiteSpace: 'nowrap' }}>Rabbit Base</h1>
