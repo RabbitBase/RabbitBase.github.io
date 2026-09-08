@@ -50,7 +50,7 @@ export default function AdminDen() {
           setIsAdmin(true);
           fetchPendingQuests();
         } else {
-          navigate('/dashboard'); // Strict route guard redirect
+          navigate('/home'); // Strict route guard redirect to valid home route
         }
       } else {
         navigate('/'); // Not logged in
